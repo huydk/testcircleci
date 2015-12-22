@@ -35,5 +35,6 @@ deployment:
     commands:
       - git branch -a
       - git remote -v
+      - git pull origin cimain
       - git push origin cibuild:cimain
 
