@@ -15,5 +15,5 @@ checkout:
     - pwd
   post:
     - git checkout origin cibuild
-    - echo 'THIS IS IN checkout:post'
+ #   - echo 'THIS IS IN checkout:post'
     - pwd
