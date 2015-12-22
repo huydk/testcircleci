@@ -22,6 +22,12 @@ test:
     - echo 'This is in test:pre'
     - pwd
     - ls -ls
+    - git branch -a
+    - git remote -v
+    - git config --global user.email "huydk@gmail.com"
+    - git config --global user.name "Huy Nguyen"
+    - git pull origin cimain
+    - git pull origin cibuild
   override:
     - echo 'This is in test:override'
     - javac HelloWorld.java
@@ -33,10 +39,5 @@ deployment:
   production:
     branch: cibuild
     commands:
-      - git branch -a
-      - git remote -v
-      - git config --global user.email "huydk@gmail.com"
-      - git config --global user.name "Huy Nguyen"
-      - git pull origin cimain
       - git push origin cibuild:cimain
 
