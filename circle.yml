@@ -1,3 +1,11 @@
 machine:
   java:
     version: oraclejdk8
+
+test:
+  pre:
+    - ls -ls
+    - pwd
+  post:
+    - echo $PATH
+  
