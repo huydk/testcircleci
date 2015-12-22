@@ -12,4 +12,5 @@ test:
 checkout:
   pre:
     - pwd
+    - ls -la
     - git checkout origin cibuild
