@@ -31,7 +31,7 @@ test:
 
 deployment:
   production:
-    branch: cimain
+    branch: cibuild
     commands:
       - git branch -a
 #      - git push https://github.com/huydk/testcircleci.git 
