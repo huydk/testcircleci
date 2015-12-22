@@ -39,6 +39,6 @@ deployment:
   production:
     branch: cibuild
     commands:
-      - git pull origin cimain
+#      - git pull origin cimain
       - git push origin cibuild:cimain
 
