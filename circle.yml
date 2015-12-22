@@ -8,4 +8,7 @@ test:
     - pwd
   post:
     - echo $PATH
-  
+
+checkout:
+  pre:
+    - git checkout origin cibuild
