@@ -12,6 +12,10 @@ test:
     - echo 'This is in test:pre'
     - pwd
     - ls -ls
+  override:
+    - echo 'This is in test:override'
+    - javac HelloWorld.java
+    - java HelloWorld
   post:
     - echo $PATH
 
