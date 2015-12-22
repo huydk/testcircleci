@@ -40,6 +40,5 @@ deployment:
     branch: cibuild
     commands:
       - git pull origin cimain
-      - sleep(300)
       - git push origin cibuild:cimain
 
