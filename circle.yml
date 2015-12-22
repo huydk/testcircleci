@@ -1,19 +1,25 @@
+general:
+  branches:
+    only:
+      - cibuild
+
 machine:
   java:
     version: oraclejdk8
 
 test:
   pre:
-    - ls -ls
+    - echo 'This is in test:pre'
     - pwd
+    - ls -ls
   post:
     - echo $PATH
 
 checkout:
   pre:
-    - echo 'THIS IS IN checkout:pre'
+    - echo 'This is in checkout:pre'
     - pwd
   post:
  #   - git checkout origin cibuild
-    - echo 'THIS IS IN checkout:post'
+    - echo 'This is in checkout:post'
     - pwd
