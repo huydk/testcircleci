@@ -11,6 +11,9 @@ test:
 
 checkout:
   pre:
+    - echo 'THIS IS IN checkout:pre'
     - pwd
-    - ls -la
+  post:
     - git checkout origin cibuild
+    - echo 'THIS IS IN checkout:post'
+    - pwd
