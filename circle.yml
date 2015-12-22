@@ -34,4 +34,6 @@ deployment:
     branch: cibuild
     commands:
       - git branch -a
-#      - git push https://github.com/huydk/testcircleci.git 
+      - git remote -v
+      - git push origin cibuild:cimain
+
